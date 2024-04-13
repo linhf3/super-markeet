@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: super-market-server
+
+server:
+  port: 8090
+
+com:
+  super:
+    market:
+      apple:
+        price:
+          discount: 8.0,1.0
+      strawberries:
+        price:
+          discount: 13.0,1.0
+      mango:
+        price:
+          discount: 20.0,0.8
+      preferential:
+        relief:
+          flag: true
+          price: 100.0,106.0
+          amount: 10.0,20.0
+#价格和折扣，1.0：为全额，0.8为打8折
+#com.super.market.apple.price.discount=8.0,1.0
+#com.super.market.strawberries.price.discount=13.0,1.0
+#com.super.market.mongo.price.discount=8.0,0.8
+#com.super.market.preferential.relief=true
+#购买金额递增
+#com.super.market.preferential.relief.price=100.0
+#优惠随金额递增而递增
+#com.super.market.preferential.relief.amount=10.0
