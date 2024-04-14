@@ -10,7 +10,7 @@ import org.springframework.util.StringUtils;
  */
 @Service
 @Slf4j
-public class PreferentialReliefService implements CalculatedAmount {
+public class PreferentialReliefService implements Favorable {
     //是否开启优惠减免
     @Value("${com.super.market.preferential.relief.flag:false}")
     private boolean preferentialReliefFlag;
@@ -49,4 +49,5 @@ public class PreferentialReliefService implements CalculatedAmount {
         }
         return total;
     }
+
 }

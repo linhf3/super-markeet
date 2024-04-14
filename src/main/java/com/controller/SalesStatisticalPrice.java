@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.service.CalculatedAmount;
+import com.service.PreferentialStrategy;
 import com.service.PricingStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
@@ -17,6 +18,9 @@ public class SalesStatisticalPrice {
 
     @Autowired
     private PricingStrategy pricingStrategy;
+
+    @Autowired
+    private PreferentialStrategy preferentialStrategy;
 
     /**
      * 统计价格
@@ -36,7 +40,7 @@ public class SalesStatisticalPrice {
             result += calculatedAmount.calculated(entry.getValue());
         }
         //2、是否开启满多少减多少优惠，根据购买情况优惠力度可能不一样
-        return pricingStrategy.getPriceDiscount("preferentialRelief").calculated(result);
+        return preferentialStrategy.getFavorable("preferentialReliefService").calculated(result);
     }
 
 }
