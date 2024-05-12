@@ -52,7 +52,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <finalName>${project.finalName}</finalName>
+        <finalName>super-markeet</finalName>
     </build>
 
 
