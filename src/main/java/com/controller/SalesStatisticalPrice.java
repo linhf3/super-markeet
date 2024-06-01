@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/sales")
+@RequestMapping("/sales12")
 public class SalesStatisticalPrice {
 
     /**
@@ -16,9 +16,9 @@ public class SalesStatisticalPrice {
      * @param requestMap
      * @return double
      */
-    @PostMapping("/statisticalPrice")
-    public double statisticalPrice(@RequestBody Map<String, Double> requestMap) {
-        return 0.11;
+    @PostMapping("/statisticalsasdaPrice")
+    public double statisticalPricaaae(@RequestBody Map<String, Double> requestMap) {
+        return 0.13;
     }
 
 }
