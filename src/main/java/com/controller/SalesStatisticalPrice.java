@@ -17,7 +17,7 @@ public class SalesStatisticalPrice {
      * @return double
      */
     @PostMapping("/statisticsre")
-    public double statticalPricae(@RequestBody Map<String, Double> requestMap) {
+    public double statcalPricae(@RequestBody Map<String, Double> requestMap) {
         return 0.13;
     }
 
