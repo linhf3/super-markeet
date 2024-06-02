@@ -5,7 +5,7 @@ SERVER_NAME=super-markeet
 # 源jar名称，mvn打包之后，target目录下的jar包名称
 JAR_NAME=super-markeet
 # jenkins下的目录
-JENKINS_HOME=/var/jenkins_home/workspace/super-markeet
+JENKINS_HOME=/var/jenkins_home/workspace/super-markeet-test
 # 等待三秒
 echo sleep 3s
 sleep 1
